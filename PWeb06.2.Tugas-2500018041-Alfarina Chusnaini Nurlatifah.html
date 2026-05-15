@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Layout CSS 3 Kolom 2 Baris</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        /* Header */
+        .header {
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Container baris */
+        .row {
+            display: flex;
+        }
+
+        /* Box kolom */
+        .column {
+            flex: 33.33%;
+            padding: 20px;
+            height: 200px;
+            border: 2px solid white;
+        }
+
+        .left {
+            background-color: rgb(246, 133, 133);
+        }
+
+        .middle {
+            background-color: rgb(218, 244, 112);
+        }
+
+        .right {
+            background-color: #f480fa;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: lightgray;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>HEADER</h1>
+        <p>Bagian header website</p>
+    </div>
+
+    <!-- Baris 1 -->
+    <div class="row">
+        <div class="column left">
+            <h2>MENU</h2>
+            <p>Menu navigasi website.</p>
+        </div>
+
+        <div class="column middle">
+            <h2>CONTENT</h2>
+            <p>Isi utama halaman web.</p>
+        </div>
+
+        <div class="column right">
+            <h2>SIDEBAR</h2>
+            <p>Informasi tambahan.</p>
+        </div>
+    </div>
+
+    <!-- Baris 2 -->
+    <div class="row">
+        <div class="column left">
+            <h2>GALERY</h2>
+            <p>Kumpulan gambar atau foto.</p>
+        </div>
+
+        <div class="column middle">
+            <h2>ARTICLE</h2>
+            <p>Artikel atau berita terbaru.</p>
+        </div>
+
+        <div class="column right">
+            <h2>CONTACT</h2>
+            <p>Informasi contact.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <h2>FOOTER</h2>
+        <p>Copyright @ Alfarina Chusnaini Nurlatifah 2026</p>
+    </div>
+
+</body>
+</html>
