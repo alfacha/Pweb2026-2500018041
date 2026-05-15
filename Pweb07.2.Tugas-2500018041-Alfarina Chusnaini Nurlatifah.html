@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas Javascript IF</title>
+</head>
+<body>
+
+    <h2>Program Konversi Nilai Angka ke Huruf</h2>
+    <script>
+        // Input nilai dari user
+        var nilai = prompt("Masukkan nilai angka (0 - 100) : ");
+            // Proses pengecekan nilai
+            if (nilai >= 0 && nilai <= 20) {
+                document.write("Nilai Huruf : E");
+            } else if (nilai >= 21 && nilai <= 39) {
+                document.write("Nilai Huruf : D");
+            } else if (nilai >= 40 && nilai <= 64) {
+                document.write("Nilai Huruf : C");
+            } else if (nilai >= 65 && nilai <= 79) {
+                document.write("Nilai Huruf : B");
+            } else if (nilai >= 80 && nilai <= 100) {
+                document.write("Nilai Huruf : A");
+            } else {
+                document.write("Nilai tidak valid");
+            }
+    </script>
+
+</body>
+</html>
